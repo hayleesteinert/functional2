@@ -33,6 +33,23 @@ www.company.com
        <button class="btnFavorite" @click="counter += 1">
         View Info
        </button>
+<!-- @click="showInternshipInfo{intersnhip.id}"
+pass in id
+
+in store
+showinternshipinfo(internshipid)
+
+map thru id, if id=id
+
+objinterhsip.views++;
+
+
+method:
+showinterhsipInfo(intershipID) {
+  store.showinterhshipInfo(insternshipID);
+}
+
+-->
 
 <br>This internship has been viewed {{counter}} times
  <Comm v-for="comments in internship.comments"
@@ -58,10 +75,10 @@ export default {
     methods: {
         setFavorites(internshipId) {
             store.setFavorites(internshipId);
-        }
-        // unsetFavorites(internshipId) {
-        //     store.setFavorites(internshipId);
-        // },
+        },
+        // FavObj(objIntership) {
+        //   store.FavObj(objIntership);
+        // }
     },
     data() {
      return{counter: +0}

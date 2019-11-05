@@ -3,7 +3,6 @@
 
     <div>
 
-      Leave a comment. You may only leave comments on the currently saved internship.
       <input type="text" placeholder="A short message here" v-model="inputEntry"/>
 
       <button class="submit"

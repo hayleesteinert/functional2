@@ -25,7 +25,9 @@ export const InternshipData = [
         majors:['Advertising', 'Broadcast'],
         location:'Arlington',
         isFavorite:true,
-        comments:[]
+        comments:[
+          {details: 'liked it a lot'}
+        ]
     }
 
 ]

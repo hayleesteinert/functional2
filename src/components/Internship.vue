@@ -8,7 +8,7 @@
          v-for="internship in sharedState.InternshipData"
          v-bind:key="internship.id"
          :internship="internship"  />
-
+<!-- can also have v-for=(intership, index) in _____ and then give it a key and props. -->
          <CommEntry />
 
   </div>
