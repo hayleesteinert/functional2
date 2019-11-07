@@ -63,14 +63,12 @@ export const store = {
 
    },
 
-////////////// ???? //////////////////////////////////
-  //  unsetFavorites (InternshipId) {
-  //    this.state.InternshipData.map((internshipObj) => {
-  //      internshipObj.id === InternshipId ? internshipObj.isFavorite = false : internshipObj.isFavorite = true;
-  //
-  //    });
-  // },
-//////////////////////////////////////////////////////
+//call to get the internship object
+   getCurrentInternship(internshipID){
+    const internship = this.state.InternshipData.find(internship=> internship.id === internshipID);
+      return internship;
+  },
+
 
 // FavObj (objIntership) {
 //   this.state.InternshipData.map( function(objInternship){

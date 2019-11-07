@@ -33,6 +33,9 @@ www.company.com
        <button class="btnFavorite" @click="counter += 1">
         View Info
        </button>
+
+       <button type="button" @click="showInternship(internship.id)">What is the id?</button>
+
 <!-- @click="showInternshipInfo{intersnhip.id}"
 pass in id
 
@@ -76,6 +79,12 @@ export default {
         setFavorites(internshipId) {
             store.setFavorites(internshipId);
         },
+        showCurrentEntry(internshipID){
+          store.getCurrentInternship(internshipID);
+        },
+        showInternship(internshipID){
+          store.getCurrentInternship(internshipID);
+        }
         // FavObj(objIntership) {
         //   store.FavObj(objIntership);
         // }
